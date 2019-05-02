@@ -1,24 +1,10 @@
-// Fancy Logo
-
-console.log(" ");
-console.log(" ");
-console.log("                ██████╗ ██╗███████╗ ██████╗ ██████╗ ██████╗ ██████╗             ██████╗  ██████╗ ████████╗ ");
-console.log("                ██╔══██╗██║██╔════╝██╔════╝██╔═══██╗██╔══██╗██╔══██╗            ██╔══██╗██╔═══██╗╚══██╔══╝ ");
-console.log("                ██║  ██║██║███████╗██║     ██║   ██║██████╔╝██║  ██║            ██████╔╝██║   ██║   ██║  ");
-console.log("                ██║  ██║██║███████╗██║     ██║   ██║██████╔╝██║  ██║            ██╔══██╗██║   ██║   ██║");
-console.log("                ██║  ██║██║╚════██║██║     ██║   ██║██╔══██╗██║  ██║            ██████╔╝╚██████╔╝   ██║");
-console.log("                ██████╔╝██║███████║╚██████╗╚██████╔╝██║  ██║██████╔╝            ╚═════╝  ╚═════╝    ╚═╝");
-console.log(" ");
-console.log(" ");
-console.log("                 ██████╗ ██████╗ ███╗   ██╗████████╗██████╗  ██████╗ ██╗     ███████╗");
-console.log("                ██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔══██╗██╔═══██╗██║     ██╔════╝");
-console.log("                ██║     ██║   ██║██╔██╗ ██║   ██║   ██████╔╝██║   ██║██║     ███████╗");
-console.log("                ██║     ██║   ██║██║╚██╗██║   ██║   ██╔══██╗██║   ██║██║     ╚════██║");
-console.log("                ╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║╚██████╔╝███████╗███████║");
-console.log("                 ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝");
-console.log(" ");
-console.log(" ");
-
+import discord
+from discord.ext import commands
+from discord.ext.commands import Bot
+import asyncio
+import random
+import requests
+import os
 
 const fs = require("fs");
 FFMPEG = require('ffmpeg');
@@ -1142,3 +1128,5 @@ async function playYT(client, message, args, ops) {
 
     ops.active.set(message.guild.id, data);
 }
+
+client.run(str(os.environ.get('BOT_TOKEN')))
